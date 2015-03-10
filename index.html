@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Growing Freightsheds</title>
+
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine">
+  
+    <script scr="http://mtaptich.github.io/d3_live_code_1/scripts/htmlmixed.js"></script>
+    <script src="http://mtaptich.github.io/d3_live_code_1/scripts/code_mirror.js"></script>
+    <script src="http://mtaptich.github.io/d3_live_code_1/scripts/color.js"></script>
+    <script src="http://mtaptich.github.io/d3_live_code_1/scripts/css.js"></script>
+    <script src="http://mtaptich.github.io/d3_live_code_1/scripts/xml.js"></script>
+    <link href="http://mtaptich.github.io/d3_live_code_1/css/setosa.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="http://mtaptich.github.io/d3_live_code_1/css/codemirror.css">
+</head>
+<style type="text/css">
+.g-chart {
+  padding: 0px;
+  position: relative;
+  width: 750px;
+  height: 453px;
+  margin-left:auto; 
+  margin-right:auto;
+}
+
+.g-chart canvas,
+.g-chart svg {
+  position: absolute;
+}
+
+canvas{
+  background: transparent;
+  opacity: 0.9;
+}
+
+.land{
+  fill: none;
+  stroke: #000;
+}
+
+</style>
+<script src="http://d3js.org/d3.v3.min.js"></script>
+<script src="http://d3js.org/topojson.v1.min.js"></script>
+<body>
+  <section class="title">
+    <div class="title-region">
+      <h1 class="title">"Localism" Redefined</h1>
+      <h3 class="by-line">
+        <ul class="list-inline">
+          <li><a href="mailto:m.taptich@berkeley.edu"><i class="fa fa-envelope-o fa-2x"></i></a></li>
+          <li><a href="https://twitter.com/MikeTaptich"><i class="fa fa-twitter fa-2x"></a></i></li>
+          <li><a href="http://www.linkedin.com/pub/michael-taptich/21/263/b28/"><i class="fa fa-linkedin-square fa-2x"></i></a></li>
+          <li><a href="https://github.com/mtaptich"><i class="fa fa-github fa-2x"></i></a></li>
+        </ul>
+      </h3>
+
+    </div>
+  </section>
+  <div class="col-xs-12 well">
+    <div class="row">
+      <div class="g-chart"></div>
+    </div>
+  </div>
+<script src="streamer.js"></script>
